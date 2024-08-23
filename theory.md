@@ -1,7 +1,7 @@
 ---
 title: Another one bytes the RUST
 date: '2024-06-24'
-tags: ['crypto','programming']
+tags: ['crypto','programming','rust']
 draft: false
 summary: This article will cover everything I've learnt about RUST programming language 
 ---
@@ -15,7 +15,7 @@ the code straight from the source code.
      
 
 #   Running RUST
-The compiler for rust is rustc, but it is more convenient to work
+The compiler for rust is `rustc`, but it is more convenient to work
 with the projects using cargo package manager. Follow instructions
 in [this](https://www.rust-lang.org/tools/install) webpage to install
 them both.
