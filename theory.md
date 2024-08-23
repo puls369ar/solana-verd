@@ -20,7 +20,9 @@ with the projects using cargo package manager. Follow instructions
 in [this](https://www.rust-lang.org/tools/install) webpage to install
 them both.
 
+```bash
 rustc main.rs
+```
 
 will create executable binary in a current folder
 
