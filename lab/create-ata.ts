@@ -29,5 +29,5 @@ import * as fs from "fs"
         "devnet"
     )
 
-    console.log(`Created token Account: ${link}`);
+    console.log(`Created Associated Token Account: ${link}`);
 })();
