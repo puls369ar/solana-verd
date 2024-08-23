@@ -43,7 +43,7 @@ rust-project
     └── main.rs
 ```
 
-where main.rs is just a simplest hello world programm and Cargo.toml is
+where `main.rs` is just a simplest hello world program and `Cargo.toml` is
 the file to give some information about the project and also 
 write the dependencies out from
 
@@ -82,9 +82,11 @@ after that
 Here target folder is generated which contains binaries and other neccessary
 files for further development, but the most important for us is executable
 in nested debug folder. By performing
-cargo run 
+```bash
+cargo run
+```
 it will automatically start executing the binary file. If there isn't one 
-it will persfrom the whole proccess starting from compilation.
+it will perform the whole proccess starting from compilation.
 
 
 # Variables
@@ -100,7 +102,7 @@ fn main() {
 //error[E0282]: type annotations needed
 ```
 
-Variables here are immutable by default. So if we try to change the value
+Variables here are ***immutable*** by default. So if we try to change the value
 of a variable we will get an error
 
 ```rust
@@ -112,8 +114,8 @@ fn main() {
 //error[E0384]: cannot assign twice to immutable variable `var`
 ```
 
-There are two workaround for this problem. Setting
-the variableto be mutable or redefining the variable anew.
+There are two workarounds for this problem. Setting
+the variable to be mutable or redefining the variable anew.
 
 ```rust
 fn main() {
@@ -128,19 +130,19 @@ fn main() {
 Yes it sounds very strange, but here we can redefine the variable
 with the same name even with the different type. In any case the value defined
 previously will remain in a memory cell until the scope of the definition is ended
-and destructor is called for this shadowed variable.  Also it can be confusing
- that immutable variables are very much like consts, but there are few differences.
-consts can't be converted into mutable by simply adding
-`mut` keyword in definition, also consts can't be redefined and you have to
-implicitly set the type of the const.
-It is a common convention to write consts in an uppercase with underscores.
+and destructor is called for this ***shadowed*** variable.  Also it can be confusing
+that immutable variables are very much like ***constant***s, but there are few differences.
+Constants can't be converted into mutable by simply adding
+`mut` keyword in definition, also constants can't be redefined and you have to
+implicitly set the type of the constant.
+It is a common convention to write constants in an uppercase with underscores.
 
 ```rust
 const MY_AGE: u32 = 17;
 ```
 
 # Types
-There two types of types in RUST, Scalar and Compound.
+There two groups of types in RUST, Scalar and Compound.
 Scalar types are the simplest ones like the integer
 that can be signed and unsigned have the capacity
 based on a different amount of bytes the type has. 
