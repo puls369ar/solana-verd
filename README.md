@@ -1,0 +1,1 @@
+This repository represents all materials related to my learning of Solana Ecosystem, RUST porgramming language and RPC calls and communications with Solana Network using Typescript/web3.js library and many others.
