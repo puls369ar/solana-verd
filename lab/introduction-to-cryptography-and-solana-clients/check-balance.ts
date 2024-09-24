@@ -1,3 +1,5 @@
+// Lab of this article https://solana.com/developers/courses/intro-to-solana/intro-to-reading-data
+
 import { Connection, LAMPORTS_PER_SOL, clusterApiUrl, PublicKey } from "@solana/web3.js"
 import dotenv from 'dotenv'
 

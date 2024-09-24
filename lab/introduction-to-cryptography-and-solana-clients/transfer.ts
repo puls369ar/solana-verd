@@ -1,3 +1,5 @@
+// Lab of this article https://solana.com/developers/courses/intro-to-solana/intro-to-writing-data
+
 import { Connection, Transaction, SystemProgram, sendAndConfirmTransaction, PublicKey, clusterApiUrl } from "@solana/web3.js"
 import { getKeypairFromEnvironment } from "@solana-developers/helpers"
 import "dotenv/config"

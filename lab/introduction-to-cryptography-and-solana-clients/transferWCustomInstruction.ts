@@ -1,3 +1,5 @@
+// Lab of this article https://solana.com/developers/courses/intro-to-solana/intro-to-custom-onchain-programs
+
 import { TransactionInstruction, Connection, Transaction, SystemProgram, sendAndConfirmTransaction, PublicKey, clusterApiUrl, Keypair, LAMPORTS_PER_SOL } from "@solana/web3.js"
 import * as fs from "fs"
 
