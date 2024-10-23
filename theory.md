@@ -13,3 +13,6 @@
 | **Algorithmic**              | Algorithm-controlled supply   | Frax, Ampleforth         | Fully decentralized, no need for collateral | Risk of failure, complex to maintain               |
 | **Commodity-Collateralized** | Physical assets (gold, silver) | PAXG, Tether Gold        | Backed by tangible assets like gold         | Centralized, less liquid than fiat-backed stablecoins |
 | **Hybrid**                   | Combination of mechanisms     | Frax                    | Balances collateral and algorithm           | Complexity, requires fine-tuning of mechanisms     |
+
+
+* In Anchor `anchor-cli 0.30.1` there is a bug. Project named "a2b" was being searched as "a_2b" when running `anchor test` because of the conventional [reason](https://github.com/coral-xyz/anchor/blob/0df688481f4ba93e9b7e011a92752d1d7664b68f/ts/packages/anchor/src/workspace.ts#L29-L38). The workaround is to name anchor projects by setting `_` before each digit used, but better not to use digitd at all
